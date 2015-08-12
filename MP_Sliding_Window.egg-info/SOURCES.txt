@@ -1,0 +1,9 @@
+README.rst
+setup.py
+MP_Sliding_Window.egg-info/PKG-INFO
+MP_Sliding_Window.egg-info/SOURCES.txt
+MP_Sliding_Window.egg-info/dependency_links.txt
+MP_Sliding_Window.egg-info/top_level.txt
+slidingwindow/__init__.py
+slidingwindow/window.py
+test/test.py
