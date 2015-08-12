@@ -2,7 +2,7 @@ Sliding Window
 ==============
 
 Sliding Window is an implementation of a process worker pool that constantly keeps a given number of running processes.
-The implementation is based on python's multiprocess module.
+The implementation is based on python's multiprocessing module.
 
 
 Install
@@ -15,7 +15,7 @@ Run the command:
 
 .. code-block:: bash
 
-    pip install slidingwindow
+    pip install mp_sliding_window
 
 
 Instaling from the source
@@ -43,28 +43,26 @@ Getting Started
 
 We start by providing the tasks we'll be running using any iterable.
 In this case we'll use a generator pattern because it makes sense in the context of a sliding window.
-
-```
+.. code-block:: bash
 def generator():
     x = 0
     while x < 10:
         x += 1
         yield x
-```
 
 Next we provide the function we want to run in each process
-```
+.. code-block:: bash
 def square(x):
     print x*x
-``` 
+
 
 The last step is to create a sliding window with a given size, target and tasks.
 After invoking start the sliding window will run until there are no more tasks.
 
-```
+.. code-block:: bash
 sl = SlidingWindow(size = 5, target=square, tasks=generator())
 sl.start()
-```
+
 
 Documentation
 =============
