@@ -3,7 +3,7 @@ from io import open
 
 setup(
     name='MP_Sliding_Window',
-    version='0.0.11',
+    version='0.0.2',
     author='Jorge Alpedrinha Ramos',
     author_email='jalpedrinharamos@gmail.com',
     packages=find_packages(),
